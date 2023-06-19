@@ -1,0 +1,22 @@
+# This is a basic workflow to help you get started with Actions
+
+print("Hello, World!")
+
+
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+print(factorial(5))
+
+def find_max(numbers):
+    max_number = numbers[0]
+    for number in numbers:
+        if number > max_number:
+            max_number = number
+    return max_number
+
+numbers = [5, 2, 9, 1, 7]
+print(find_max(numbers))
